@@ -31,10 +31,14 @@ testTask3 {
     doLast {
         println "doLast called"
     }
+    println "testTask3 called"
 }
 
-testTask3 {
-    println "testTask3 called"
+task testTask4 {
+    dependsOn(testTask3)
+    doLast {
+        println "testTask4 finished"
+    }
 }
 /*
     CLASS EXAMPLE
