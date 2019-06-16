@@ -1,6 +1,15 @@
 /*
+    LOCAL PROPERTIES
+ */
+
+ext {
+    localProperty = "hello from local property"
+}
+
+/*
     TASK EXAMPLES
  */
+
 task simpleTask {
     println "Hello from simple task"
 }
@@ -53,6 +62,7 @@ task testTask5 {
 
 task task6 {
     println msg
+    println localProperty
 }
 /*
     CLASS EXAMPLE
