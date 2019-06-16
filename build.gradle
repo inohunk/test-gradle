@@ -35,9 +35,19 @@ testTask3 {
 }
 
 task testTask4 {
+    //watch running gradle with -q option
     dependsOn(testTask3)
     doLast {
         println "testTask4 finished"
+    }
+}
+
+task testTask5 {
+    //write follow code to test shouldRunAfter
+    //gradle -q testTask5 testTask4
+    shouldRunAfter(testTask4)
+    doLast {
+        println "testTask5 finished"
     }
 }
 /*
