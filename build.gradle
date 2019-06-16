@@ -11,9 +11,21 @@ task javaTask {
     java.print()
 }
 
+task functionTask {
+    test()
+}
+/*
+    CLASS EXAMPLE
+ */
 class Java {
     static void print(){
         System.out.println("Hello from java task")
     }    
 }
 
+/*
+    FUNCTION EXAMPLE
+ */
+def test(){
+    println "hello from test function"
+}
