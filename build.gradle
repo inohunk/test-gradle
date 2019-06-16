@@ -50,6 +50,10 @@ task testTask5 {
         println "testTask5 finished"
     }
 }
+
+task task6 {
+    println msg
+}
 /*
     CLASS EXAMPLE
  */
