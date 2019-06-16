@@ -64,6 +64,10 @@ task task6 {
     println msg
     println localProperty
 }
+
+task task7(type: SomeTask) {
+
+}
 /*
     CLASS EXAMPLE
  */
@@ -74,6 +78,12 @@ class Java {
     }
 }
 
+class SomeTask extends DefaultTask {
+    @TaskAction
+    void doSome(){
+        println "doSome called"
+    }
+}
 /*
     FUNCTION EXAMPLE
  */
