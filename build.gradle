@@ -25,6 +25,15 @@ task testTask3
 testTask3.description = "This is test task"
 testTask3.group = "Only for tests"
 
+testTask3.doFirst {
+    println "doFirst called"
+}
+testTask3.doLast {
+    println "doLast called"
+}
+testTask3 {
+    println "testTask3 called"
+}
 /*
     CLASS EXAMPLE
  */
