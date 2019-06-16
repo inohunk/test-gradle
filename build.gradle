@@ -18,19 +18,31 @@ task functionTask {
 /*
     CLASS EXAMPLE
  */
+
 class Java {
-    static void print(){
+    static void print() {
         System.out.println("Hello from java task")
-    }    
+    }
 }
 
 /*
     FUNCTION EXAMPLE
  */
-def test(){
+
+def test() {
     println "hello from test function"
 }
 
-static def square(arg){
-    println arg*arg
+static def square(arg) {
+    println arg * arg
+}
+
+/*
+    STRUCTURES
+ */
+
+def list = ["A", "B", "C"]
+
+task structures {
+    list.each {item -> println "list item: $item" }
 }
