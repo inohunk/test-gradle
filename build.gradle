@@ -66,7 +66,7 @@ task task6 {
 }
 
 task task7(type: SomeTask) {
-
+    parameter = "0x123"
 }
 /*
     CLASS EXAMPLE
@@ -79,9 +79,11 @@ class Java {
 }
 
 class SomeTask extends DefaultTask {
+    String parameter
+
     @TaskAction
     void doSome(){
-        println "doSome called"
+        println "doSome called with parameter{$parameter}"
     }
 }
 /*
