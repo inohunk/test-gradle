@@ -1,0 +1,19 @@
+/*
+    TASK EXAMPLES
+ */
+task simpleTask {
+    println "Hello from simple task"
+}
+
+
+task javaTask {
+    Java java = new Java()
+    java.print()
+}
+
+class Java {
+    static void print(){
+        System.out.println("Hello from java task")
+    }    
+}
+
