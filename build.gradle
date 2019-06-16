@@ -15,6 +15,16 @@ task functionTask {
     test()
     square(10)
 }
+
+project.task("PROJECT TASK")
+task("test task 1")
+task "test task 2"
+task testTask3
+
+//configuring testTask3
+testTask3.description = "This is test task"
+testTask3.group = "Only for tests"
+
 /*
     CLASS EXAMPLE
  */
