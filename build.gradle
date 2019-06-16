@@ -25,14 +25,14 @@ task testTask3
 testTask3 {
     description "This is test task"
     group = "Only for tests"
+    doFirst {
+        println "doFirst called"
+    }
+    doLast {
+        println "doLast called"
+    }
 }
 
-testTask3.doFirst {
-    println "doFirst called"
-}
-testTask3.doLast {
-    println "doLast called"
-}
 testTask3 {
     println "testTask3 called"
 }
@@ -65,5 +65,5 @@ static def square(arg) {
 def list = ["A", "B", "C"]
 
 task structures {
-    list.each {item -> println "list item: $item" }
+    list.each { item -> println "list item: $item" }
 }
