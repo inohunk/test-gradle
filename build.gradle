@@ -22,8 +22,10 @@ task "test task 2"
 task testTask3
 
 //configuring testTask3
-testTask3.description = "This is test task"
-testTask3.group = "Only for tests"
+testTask3 {
+    description "This is test task"
+    group = "Only for tests"
+}
 
 testTask3.doFirst {
     println "doFirst called"
