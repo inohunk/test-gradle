@@ -13,6 +13,7 @@ task javaTask {
 
 task functionTask {
     test()
+    square(10)
 }
 /*
     CLASS EXAMPLE
@@ -28,4 +29,8 @@ class Java {
  */
 def test(){
     println "hello from test function"
+}
+
+static def square(arg){
+    println arg*arg
 }
